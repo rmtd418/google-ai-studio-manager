@@ -1,0 +1,2 @@
+# AI-Studio-GAS-Pilot---Conversation-Manager
+在使用 Google AI Studio 进行长文本对话或复杂 Prompt 调试时，原生的历史记录难以管理，且无法批量清理特定的对话节点。本项目通过注入一个轻量级的悬浮面板，接管了页面右侧的时间轴数据，提供了一个直观、纯净且功能强大的对话管理界面。
