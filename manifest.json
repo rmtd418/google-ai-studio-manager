@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "AI Studio 对话管理器 (悬浮版)",
+  "version": "2.0.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://aistudio.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://aistudio.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "64": "icons/64.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png"
+    },
+    "default_title": "AI Studio 对话管理器"
+  }
+}
