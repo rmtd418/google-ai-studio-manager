@@ -1,4 +1,5 @@
-// background.js - Manifest V3 修正版
+// background.js - AI Studio 对话管理器 Service Worker
+
 
 // 这是一个 Service Worker，它的生命周期和普通页面不同
 // 必须确保在 Service Worker 正确启动后，再进行 API 注册

@@ -1,4 +1,5 @@
-// content.js - V33 文件名过滤 & 完美显示版 & 搜索+多选增强版
+// content.js - AI Studio 对话管理器
+
 
 (function () {
   if (document.getElementById('ais-overlay-root')) return;
@@ -13,7 +14,8 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    /* === 样式系统 (V30样式保持不变) === */
+    /* === 样式系统 === */
+
     :host {
       --bg-panel: #1e1e1e; --bg-card: #2d2d2d; --bg-hover: #383838; --bg-ball: #1e1e1e; --border: #444;
       --text-main: #e8eaed; --text-sub: #bdc1c6; --primary: #8ab4f8; --danger: #f28b82;
@@ -328,7 +330,8 @@
   btnRefresh.onclick = () => manualScan(true);
   btnToBottom.onclick = () => { if (listEl.lastElementChild) listEl.lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'end' }); };
 
-  // === 4. 扫描器 (V33 文件名屏蔽版) ===
+  // === 4. 扫描器 ===
+
   function DOM_Scanner() {
     const timelineItems = Array.from(document.querySelectorAll('.prompt-scrollbar-item button, button.ms-button-icon'));
     const nodes = [];
